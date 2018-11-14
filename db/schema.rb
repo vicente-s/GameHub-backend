@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_12_202726) do
+ActiveRecord::Schema.define(version: 2018_11_12_202606) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id"
@@ -24,13 +24,9 @@ ActiveRecord::Schema.define(version: 2018_11_12_202726) do
     t.string "developer"
     t.string "genre"
     t.string "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "gamesystems", force: :cascade do |t|
-    t.integer "game_id"
-    t.integer "system_id"
+    t.string "picture_url"
+    t.string "release_date"
+    t.string "system"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -47,12 +43,6 @@ ActiveRecord::Schema.define(version: 2018_11_12_202726) do
     t.integer "game_id"
     t.integer "rating"
     t.string "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "systems", force: :cascade do |t|
-    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

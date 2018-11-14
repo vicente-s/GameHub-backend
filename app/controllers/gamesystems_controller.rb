@@ -1,3 +1,0 @@
-class GamesystemsController < ApplicationController
-
-end

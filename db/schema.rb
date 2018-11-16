@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_12_202606) do
+ActiveRecord::Schema.define(version: 2018_11_15_161437) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id"
@@ -29,11 +29,12 @@ ActiveRecord::Schema.define(version: 2018_11_12_202606) do
     t.string "system"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "video"
   end
 
   create_table "images", force: :cascade do |t|
     t.integer "game_id"
-    t.string "source"
+    t.string "video"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
